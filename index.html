@@ -3,69 +3,379 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wendel Barata Portfolio</title>
+  <title>Wendel Barata | FullStack Developer Portfolio</title>
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <!-- Dev Icon Fonts -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
   <!-- CSS do Projeto -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-  <main id="container">
-    <aside id="bio-container">
-      <h2>Wendel Barata</h2>
-      <img id="bio-image" src="images/wendelBarata-Estagio.jpg" alt="Wendel Barata">
-      <p>Hello, my name is Wendel Barata and I'm <span class="highlight">FullStack Developer</span>.</p>
-      <p id="welcome-text">Welcome!</p>
-      <ul id="social-container">
-        <li><a href="https://www.linkedin.com/in/wendel-isaias-barata-excel/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-        <li><a href="https://github.com/WendelBarata" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
-      </ul>
-      <div id="email-container">
-        <ion-icon name="mail-outline"></ion-icon><a href="mailto:wnlbarata@alu.ufc.br">wnlbarata@alu.ufc.br</a>
+<body class="no-js">
+  <!-- Enable JS detection -->
+  <script>document.body.className = document.body.className.replace('no-js', 'js');</script>
+  
+  <!-- Background Effects -->
+  <div class="background-effects">
+    <div class="floating-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-brand">WB</div>
+    <div class="nav-toggle" id="navToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="container">    <aside id="bio-container">
+      <div class="profile-card">
+        <div class="profile-image-container">
+          <img id="bio-image" src="images/wendelBarata-Estagio.jpg" alt="Wendel Barata">
+          <div class="status-indicator"></div>
+        </div>
+        <h2>Wendel Barata</h2>
+        <div class="typing-container">
+          <p class="typing-text">Hello, I'm a <span class="highlight typing-effect">FullStack Developer</span></p>
+        </div>
+        <p id="welcome-text">Welcome to my digital space!</p>
+        
+        <div class="quick-stats">
+          <div class="stat-item">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">20+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+        </div>
+
+        <ul id="social-container">
+          <li><a href="https://www.linkedin.com/in/wendel-isaias-barata-excel/" target="_blank" class="social-link linkedin">
+            <ion-icon name="logo-linkedin"></ion-icon>
+            <span class="tooltip">LinkedIn</span>
+          </a></li>
+          <li><a href="https://github.com/WendelBarata" target="_blank" class="social-link github">
+            <ion-icon name="logo-github"></ion-icon>
+            <span class="tooltip">GitHub</span>
+          </a></li>
+        </ul>
+        
+        <div id="contact" class="contact-info">
+          <div id="email-container">
+            <ion-icon name="mail-outline"></ion-icon>
+            <a href="mailto:wnlbarata@alu.ufc.br">wnlbarata@alu.ufc.br</a>
+          </div>
+          <div class="location-container">
+            <ion-icon name="location-outline"></ion-icon>
+            <span>Brazil</span>
+          </div>
+        </div>
       </div>
-    </aside>
-    <section id="about-container">
-      <h1 id="name">Wendel Barata</h1>
-      <p id="title"><span class="highlight">FullStack Developer</span></p>
-      <p class="description">I'm a developer specializing in Data Science and desktop applications. I like to take part in projects from <span class="highlight">defining business rules and gathering requirements</span> to <span class="highlight">deploying the application.</span>.</p>
-      <p class="description">I work on both the <span class="highlight">front</span> and <span class="highlight">back-end</span>, and I love technology. I study every day to become better and write quality code.</p>
-      <a href="images/CV_WendelBarata.pdf" download="CV_WendelBarata.pdf" id="btn-cv"><ion-icon name="download-outline"></ion-icon><span>C. Vitae</span></a>
-      <h2 id="skills-section-title">My Skills</h2>
-      <p class="description">Here are the languages and platforms I master:</p>
-      <div id="skills-container">
-        <div class="skills-box">
-          <p class="skills-title">Front-end</p>
-          <i class="devicon-html5-plain colored"></i>
-          <i class="devicon-css3-plain colored"></i>
-          <i class="devicon-javascript-plain colored"></i>
+    </aside>    <section id="about-container">
+      <div class="hero-section" id="about">
+        <h1 id="name">
+          <span class="name-highlight">Wendel</span> 
+          <span class="name-normal">Barata</span>
+        </h1>
+        <div class="title-container">
+          <p id="title">
+            <span class="title-prefix">I am a</span>
+            <span class="highlight title-main">FullStack Developer</span>
+          </p>
+          <div class="title-underline"></div>
         </div>
-        <div class="skills-box">
-          <p class="skills-title">Back-end</p>
-          <i class="devicon-python-plain colored"></i>
+        
+        <div class="description-container">
+          <p class="description main-description">
+            I'm a passionate developer specializing in <span class="highlight">Data Science</span> and 
+            <span class="highlight">desktop applications</span>. I enjoy taking projects from 
+            <span class="highlight">concept to deployment</span>, ensuring every detail matters.
+          </p>
+          <p class="description">
+            Working across the entire stack - from elegant <span class="highlight">front-end</span> 
+            interfaces to robust <span class="highlight">back-end</span> systems. I'm constantly 
+            learning and evolving to write better, cleaner code.
+          </p>
         </div>
-        <div class="skills-box">
-          <p class="skills-title">Databases</p>
-          <i class="devicon-sqlite-plain colored"></i>
-          <i class="devicon-mysql-original colored"></i>
-        </div>
-        <div class="skills-box">
-          <p class="skills-title">Back-end Frameworks</p>
-          <i class="devicon-django-plain colored"></i>
-        </div>
-        <div class="skills-box">
-          <p class="skills-title">Others</p>
-          <i class="devicon-visualbasic-plain colored"></i>
-          <i class="devicon-qt-plain colored"></i>
-          <i class="devicon-git-plain colored"></i>
-          <i class="devicon-github-original"></i>
-          <i class="devicon-vscode-plain colored"></i>
+
+        <div class="cta-container">
+          <a href="images/CV_WendelBarata.pdf" download="CV_WendelBarata.pdf" id="btn-cv" class="btn btn-primary">
+            <ion-icon name="download-outline"></ion-icon>
+            <span>Download CV</span>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <ion-icon name="chatbubble-outline"></ion-icon>
+            <span>Let's Talk</span>
+          </a>
         </div>
       </div>
-    </section>
-  </main>
+
+      <div class="skills-section" id="skills">
+        <h2 id="skills-section-title">
+          <span class="section-number">01.</span>
+          My Technical Arsenal
+        </h2>        <p class="section-description">Technologies and tools I work with daily</p>
+          <div id="skills-container">
+          <div class="skills-box" data-category="languages">
+            <div class="skills-header">
+              <div class="skills-icon">
+                <ion-icon name="code-slash-outline"></ion-icon>
+              </div>
+              <p class="skills-title">Languages</p>
+            </div>
+            <div class="skills-icons">
+              <div class="skill-item">
+                <i class="devicon-python-plain colored"></i>
+                <span class="skill-name">Python</span>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-javascript-plain colored"></i>
+                <span class="skill-name">JavaScript</span>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-typescript-plain colored"></i>
+                <span class="skill-name">TypeScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-box" data-category="frontend">
+            <div class="skills-header">
+              <div class="skills-icon">
+                <ion-icon name="desktop-outline"></ion-icon>
+              </div>
+              <p class="skills-title">Frontend & UI</p>
+            </div>
+            <div class="skills-icons">
+              <div class="skill-item">
+                <i class="devicon-html5-plain colored"></i>
+                <span class="skill-name">HTML5</span>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-css3-plain colored"></i>
+                <span class="skill-name">CSS3</span>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-nextjs-plain colored"></i>
+                <span class="skill-name">Next.js</span>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-qt-plain colored"></i>
+                <span class="skill-name">Qt</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-box" data-category="backend">
+            <div class="skills-header">
+              <div class="skills-icon">
+                <ion-icon name="server-outline"></ion-icon>
+              </div>
+              <p class="skills-title">Backend & APIs</p>
+            </div>            <div class="skills-icons">
+              <div class="skill-item">
+                <i class="devicon-nodejs-plain colored"></i>
+                <span class="skill-name">Node.js</span>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-django-plain colored"></i>
+                <span class="skill-name">Django</span>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-nestjs-original colored"></i>
+                <span class="skill-name">NestJS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-box" data-category="database">
+            <div class="skills-header">
+              <div class="skills-icon">
+                <ion-icon name="library-outline"></ion-icon>
+              </div>
+              <p class="skills-title">Database & Storage</p>
+            </div><div class="skills-icons">
+              <div class="skill-item">
+                <i class="devicon-postgresql-plain colored"></i>
+                <span class="skill-name">PostgreSQL</span>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-mysql-original colored"></i>
+                <span class="skill-name">MySQL</span>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-sqlite-plain colored"></i>
+                <span class="skill-name">SQLite</span>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-prisma-original colored"></i>
+                <span class="skill-name">Prisma</span>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-sqlalchemy-plain colored"></i>
+                <span class="skill-name">SQLAlchemy</span>
+              </div>
+            </div>
+          </div>          <div class="skills-box" data-category="devops">
+            <div class="skills-header">
+              <div class="skills-icon">
+                <ion-icon name="settings-outline"></ion-icon>
+              </div>
+              <p class="skills-title">DevOps & Tools</p>
+            </div>
+            <div class="skills-icons">
+              <div class="skill-item">
+                <i class="devicon-git-plain colored"></i>
+                <span class="skill-name">Git</span>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-github-original"></i>
+                <span class="skill-name">GitHub</span>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-docker-plain colored"></i>
+                <span class="skill-name">Docker</span>
+              </div>
+              <div class="skill-item">
+                <i class="devicon-vscode-plain colored"></i>
+                <span class="skill-name">VS Code</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Wendel Barata. Crafted with passion and lots of ☕</p>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
   <!-- Ion Icons -->
-  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  
+  <!-- Custom JavaScript for interactions -->
+  <script>
+    // Wait for DOM to be fully loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      
+      // Mobile navigation toggle
+      const navToggle = document.getElementById('navToggle');
+      const navMenu = document.getElementById('navMenu');
+      
+      if (navToggle && navMenu) {
+        navToggle.addEventListener('click', function() {
+          navMenu.classList.toggle('active');
+          navToggle.classList.toggle('active');
+        });
+      }
+
+      // Smooth scrolling for navigation links (fallback for older browsers)
+      document.querySelectorAll('.nav-link').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetId = link.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          
+          if (targetElement) {
+            // Use smooth scrolling if supported, otherwise use fallback
+            if ('scrollBehavior' in document.documentElement.style) {
+              targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+              });
+            } else {
+              // Fallback for older browsers
+              const targetPosition = targetElement.offsetTop - 80;
+              window.scrollTo(0, targetPosition);
+            }
+          }
+          
+          // Close mobile menu
+          if (navMenu && navToggle) {
+            navMenu.classList.remove('active');
+            navToggle.classList.remove('active');
+          }
+        });
+      });
+
+      // Typing effect for the bio (with fallback)
+      const typingText = document.querySelector('.typing-effect');
+      if (typingText) {
+        const text = typingText.textContent;
+        typingText.textContent = '';
+        
+        let i = 0;
+        function typeWriter() {
+          if (i < text.length) {
+            typingText.textContent += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, 100);
+          }
+        }
+        
+        setTimeout(typeWriter, 1000);
+      }
+
+      // Animation on scroll (with IntersectionObserver support check)
+      if ('IntersectionObserver' in window) {
+        const observerOptions = {
+          threshold: 0.1,
+          rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('animate-in');
+            }
+          });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.skills-box, .description, .cta-container').forEach(function(el) {
+          observer.observe(el);
+        });
+      } else {
+        // Fallback: add animation class immediately for older browsers
+        document.querySelectorAll('.skills-box, .description, .cta-container').forEach(function(el) {
+          el.classList.add('animate-in');
+        });
+      }
+      
+      // Add simple hover effects for better compatibility
+      document.querySelectorAll('.skill-item').forEach(function(item) {
+        item.addEventListener('mouseenter', function() {
+          this.style.transform = 'translateY(-4px)';
+        });
+        
+        item.addEventListener('mouseleave', function() {
+          this.style.transform = 'translateY(0)';
+        });
+      });
+      
+    });
+  </script>
 </body>
 </html>
